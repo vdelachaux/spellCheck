@@ -10,50 +10,27 @@ Case of
 		
 		SET TIMER:C645(0)
 		
-		//Activate the spell checking options we want
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("automaticLanguage"))))
-			
-			INVOKE ACTION:C1439("spell/autoLanguageEnabled")
-			
-		End if 
+		// Activate the spell checking options we want
 		
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("grammarEnabled"))))
-			
-			INVOKE ACTION:C1439("spell/grammarEnabled")
-			
-		End if 
+		var $option : Text
 		
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("autoCorrectionEnabled"))))
+		For each ($option; [\
+			"autoLanguageEnabled"; \
+			"grammarEnabled"; \
+			"autoCorrectionEnabled"; \
+			"autoSubstitutionsEnabled"; \
+			"visibleSubstitutions"; \
+			"autoDashSubstitutionsEnabled"; \
+			"autoQuoteSubstitutionsEnabled"\
+			])
 			
-			INVOKE ACTION:C1439("spell/autoCorrectionEnabled")
+			If (Not:C34(Bool:C1537(OBJECT Get value:C1743($option))))
+				
+				INVOKE ACTION:C1439("spell/"+$option)
+				
+			End if 
 			
-		End if 
-		
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("autoSubstitutionsEnabled"))))
-			
-			INVOKE ACTION:C1439("spell/autoSubstitutionsEnabled")
-			
-		End if 
-		
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("visibleSubstitutions"))))
-			
-			INVOKE ACTION:C1439("spell/visibleSubstitutions")
-			
-		End if 
-		
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("autoDashSubstitutionsEnabled"))))
-			
-			INVOKE ACTION:C1439("spell/autoDashSubstitutionsEnabled")
-			
-		End if 
-		
-		If (Not:C34(Bool:C1537(OBJECT Get value:C1743("autoQuoteSubstitutionsEnabled"))))
-			
-			INVOKE ACTION:C1439("spell/autoQuoteSubstitutionsEnabled")
-			
-		End if 
+		End for each 
 		
 		//______________________________________________________
 End case 
-
-

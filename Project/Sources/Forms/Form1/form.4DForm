@@ -34,7 +34,7 @@
 					],
 					"method": "ObjectMethods/Input.4dm"
 				},
-				"automaticLanguage": {
+				"autoLanguageEnabled": {
 					"type": "checkbox",
 					"text": "Automatic language",
 					"top": 44,
@@ -141,7 +141,7 @@
 			}
 		}
 	],
-	"geometryStamp": 49,
+	"geometryStamp": 50,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
