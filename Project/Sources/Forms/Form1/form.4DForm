@@ -32,7 +32,9 @@
 					"events": [
 						"onGettingFocus"
 					],
-					"method": "ObjectMethods/Input.4dm"
+					"method": "ObjectMethods/Input.4dm",
+					"sizingX": "grow",
+					"sizingY": "grow"
 				},
 				"autoLanguageEnabled": {
 					"type": "checkbox",
@@ -41,11 +43,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/autoLanguageEnabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"spellChecking": {
 					"type": "checkbox",
@@ -54,11 +57,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/enabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"autoSubstitutionsEnabled": {
 					"type": "checkbox",
@@ -67,11 +71,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/autoSubstitutionsEnabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"grammarEnabled": {
 					"type": "checkbox",
@@ -80,11 +85,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/grammarEnabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"autoCorrectionEnabled": {
 					"type": "checkbox",
@@ -93,11 +99,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/autoCorrectionEnabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"visibleSubstitutions": {
 					"type": "checkbox",
@@ -106,11 +113,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/visibleSubstitutions",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"autoDashSubstitutionsEnabled": {
 					"type": "checkbox",
@@ -119,11 +127,12 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/autoDashSubstitutionsEnabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				},
 				"autoQuoteSubstitutionsEnabled": {
 					"type": "checkbox",
@@ -132,16 +141,17 @@
 					"left": 534,
 					"width": 200,
 					"height": 18,
-					"events": [
-						"onClick"
-					],
+					"events": [],
 					"action": "spell/autoQuoteSubstitutionsEnabled",
-					"focusable": false
+					"focusable": false,
+					"sizingX": "move",
+					"enterable": false,
+					"visibility": "hidden"
 				}
 			}
 		}
 	],
-	"geometryStamp": 50,
+	"geometryStamp": 68,
 	"editor": {
 		"activeView": "View 1",
 		"defaultView": "View 1",
